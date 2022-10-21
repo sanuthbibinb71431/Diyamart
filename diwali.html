@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIYA MART</title>
+    <link rel="stylesheet" href="diwali.css">
+    <script src="https://kit.fontawesome.com/053434e8db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--mainbody section-->
+    <div class="mainbody">
+        <!-- creating navbar-->
+        <div class="nav">
+            <div class="logo">
+                <i class="fa fa-cart-shopping" aria-hidden="true"></i><span>DIYA MART</span>
+            </div>
+            <ul>
+                <li><a href="#" id="signin"><i class="fa-solid fa-user fa-1x"></i><span>SIGNIN</span></a></li>
+            </ul>
+        </div>
+        <!--navrbar ends-->
+
+
+        <!--Content starts-->
+        <div class="content1">
+            <div class="content">
+                <span>
+                    <p>Celebrate This Diwali </p>
+                </span>
+                <p>Get 50% Off On Each Product And Win Gifts <i class="fa-sharp fa-solid fa-gift"></i></p>
+                <div class="btn">
+                    <Button onclick="clickhere()"><i class="fa-thin fa-rocket-launch"></i>LIGHT HERE</Button>
+                </div>
+            </div>
+        </div>
+        <!--content ends-->
+
+
+        <!--Creating animation images-->
+        <div class="img2"></div>
+        <div class="img3">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+            <img src="images/hanging3.png">
+        </div>
+        <!--animation images ends-->
+
+
+        <!--creating footer section-->
+        <div class="footer">
+            <div class="sociallinks">
+                <img src="images/fb.png">
+                <img src="images/ig.png">
+                <img src="images/tw.png">
+            </div>
+            <div class="contact">
+                <p><i class="fa fa-cart-shopping" aria-hidden="true"></i><span>DIYA MART</span><br>Contact us:+91
+                    800911242/+91 9633721477<br>Email:diwalistore@gamil.com</p>
+            </div>
+            <div class="usefullinks">
+                <img src="images/share.png">
+                <img src="images/info.png">
+            </div>
+        </div>
+        <!--footer section ends-->
+    </div>
+    <!--mainbody section ends-->
+
+
+    <!--js script for button-->
+    <script>
+        const signin=document.getElementById('signin');
+        function clickhere(){
+            document.location.href="images/mainpage.html";
+        }
+        signin.onclick=function(){
+            signin.classList.toggle('active');
+        }
+    </script>
+    <!--script ends-->
+</body>
+
+</html>

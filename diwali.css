@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inspiration', cursive;
+}
+body{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+.mainbody{
+    height:100%;
+    width:100%;
+    position:relative;
+    background-color: rgba(48, 11, 71, 0.568);
+    z-index: 3;
+}
+.nav{
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    animation: nav 4s ease-in-out;
+}
+@keyframes nav {
+    0%{
+        transform: translateY(-100%);
+    }
+}
+.logo{
+    font-size: 40px;
+    margin:8px;
+    color: #F98404;
+}
+.fa-cart-shopping
+{
+    transform: rotate(45deg);
+}
+.logo span{
+    background:url(images/logoimg.jpg);
+    
+    background-size: cover;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.nav ul li a{
+    
+    height:100%;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 30px;
+    margin:10px;
+    cursor: pointer;
+    color: white;
+}
+.nav ul li a span{
+    font-size: 20px;
+}
+.nav ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    color:black;
+}
+.content1{
+    position: absolute;
+    top:30%;
+    left:8%;
+    line-height: 80px;
+    width:80%;
+    animation: content1 3s ease-in-out;
+}
+@keyframes content1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    
+}
+.content{
+    animation: content 2s ease-in-out infinite alternate;
+}
+@keyframes content {
+    from{
+        text-shadow: 0 0 20px #F98404;
+    }
+    to{
+        text-shadow: 0 0 30px #F98404
+        0 0 10px #F98404;
+
+    }
+}
+.content span p{
+    font-size:60px;
+    font-weight: bold;
+    color:#F98404;
+}
+.content p{
+    font-size: 35px;
+    color:#F98404;
+    font-weight: bold;
+}
+.btn{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    animation: btn 5s ease-in-out;
+}
+@keyframes btn {
+    0%{
+        transform: translateY(100%);
+    }
+}
+.btn button{
+    width:200px;
+    height:60px;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn button:hover{
+    background: url(images/btn.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #F98404;
+    box-shadow: 0 0 50px #F98404
+}
+.img2 {
+    width: 100%;
+    height:15%;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    background-image: url(images/hanging2.png);
+    background-size: 50%;
+    background-position: center;
+}
+.img3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    position:absolute;
+    bottom: -300px;
+    z-index: -2;
+}
+@keyframes hanging {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.img3 img:nth-child(1){
+    width:50px;
+    animation-delay: 1s;
+}
+.img3 img:nth-child(2){
+    width:100px;
+    animation-delay: 4s;
+}
+.img3 img:nth-child(3){
+    width:150px;
+    animation-delay: 6s;
+}
+.img3 img:nth-child(4){
+    width:70px; 
+    animation-delay: 3s;
+}
+.img3 img:nth-child(5){
+    width:300px;
+    animation-delay: 7s;
+}
+.img3 img:nth-child(6){
+    width:150px;
+    animation-delay: 2s;
+}
+.img3 img:nth-child(7){
+    width:110px;
+    animation-delay: 3s;
+}
+.img3 img:nth-child(8){
+    width:200px;
+    animation-delay: 5s;
+}
+.img3 img:nth-child(9){
+    width:25px;
+    animation-delay: 5s;
+}
+.img3 img{
+    width:80px;
+    animation: hanging 7s linear infinite;
+
+}
+.footer{
+    width:100%;
+    color:white;
+    background-color: rgba(41, 13, 58, 0.377);   
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: footer 2s ease-in-out;
+}
+@keyframes footer {
+    0%{
+        transform: translateY(100%);
+    }
+}
+.sociallinks img,.usefullinks img{
+    width:30px
+}
+.contact{
+    text-align: center;
+    font-size: 15px;
+}
+.contact span{
+    background:url(images/logoimg.jpg);
+    color:#F98404;
+    background-size: cover;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact .fa-cart-shopping{
+    color: #F98404;
+}
